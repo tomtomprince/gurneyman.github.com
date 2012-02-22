@@ -1,0 +1,122 @@
+/********************************/
+/* Style: Physics Hovel Green   */
+/* Author: Thomas Prince        */
+/* Email: pnezzy@gmail.com      */
+/* Feel free to use this for    */
+/* inspiration. Drop me a line. */
+/********************************/
+
+
+/********************************/
+/*           Main               */
+/********************************/
+
+html {
+            height: 100%;
+            margin-bottom: 0px;
+            }
+
+html * {
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            }
+
+body {
+            background: #ced6d2 url(../images/bgtile1.jpg) repeat-x top left;
+            color: #3d555c;
+            font-family: arial, sans-serif;
+            }
+
+/********************************/
+/*           Lists              */
+/********************************/
+
+ul {
+            list-style: url(../images/bullet.gif);
+            color: #4d641e;
+            position: relative;
+            left: 19px;
+            background-color: transparent;
+            }
+li {
+            padding: 0 0 2px 0;
+            }
+
+li.header {
+            /*border-bottom: solid 1px #4d641e;*/
+            font-size: large;
+            }
+/********************************/
+/*           Links              */
+/********************************/
+
+a:link {
+            color: #a14136;
+            text-decoration: none;
+            background-color: transparent;
+            }
+
+a:hover {
+            color: #4e9ebc;
+            text-decoration: none;
+            background-color: transparent;
+            }
+
+a:visited {
+            color: #b5bfa0;
+            text-decoration: none;
+            background-color: transparent;
+            }
+
+/********************************/
+/*           Layout             */
+/********************************/
+
+#top {
+            position: absolute;
+            left: 100px;
+            width: 818px;
+            height: 22px;
+            background: url(../images/top.jpg);
+            
+            }
+
+#everything {
+            position: absolute;
+            left:100px;
+            top: 22px;
+            width: 818px;
+            height: 100%;
+            background: url(../images/bg.gif);
+            
+            }
+#maincontent {
+            position: relative;
+            left:40px;
+            top: 40px;
+            width: 700px;
+            padding: 0 0 0 20px;
+            
+            }
+
+ul#mainmenu li {
+            font-size: 10pt;
+            display: inline;
+            position: relative;
+            left: 490px;
+            }
+
+#logo    {
+            position: relative;
+            left: 20px;
+            top: 25px;
+            }
+
+p {
+            position:relative;
+            left: 20px;
+            top: 10px;
+            right: 20px;
+            bottom: 10px;
+            }
+
