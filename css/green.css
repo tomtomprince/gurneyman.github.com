@@ -22,7 +22,7 @@ html * {
             }
 
 body {
-            background: #FFE001;
+            background: #231F20;
             color: #000000;
             font-family: sans-serif;
             }
@@ -32,7 +32,7 @@ body {
 /********************************/
 
 ul {
-            list-style: url(../images/bullet.gif);
+            
             color: #4d641e;
             position: relative;
             left: 19px;
@@ -84,9 +84,9 @@ a:visited {
             position: absolute;
             left:100px;
             top: 22px;
-            width: 818px;
+            width: 80%;
             height: 100%;
-            background: #F6FCF7;
+            background: #FFE001;
             
             }
 #maincontent {
