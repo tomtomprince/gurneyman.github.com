@@ -1,51 +1,140 @@
 /********************************/
 /* Style: Physics Hovel Green   */
 /* Author: Thomas Prince        */
-/* Email: pnezzy@gmail.com      */
+/* Email: tprince14@gmail.com   */
 /* Feel free to use this for    */
 /* inspiration. Drop me a line. */
 /********************************/
 
+/* Modular Scale - modularscale.com
+	----------------------
+	14px @ 1:1.618	
+	15px @ 1:1.618	
+	----------------------
+Pixels 		Ems 	% of 13
+1,139.980 	81.427 	8,769.077
+1,063.974 	75.998 	8,184.415
+704.561 	50.326 	5,419.700
+657.586 	46.97 	5,058.354
+435.452 	31.104 	3,349.631
+406.419 	29.03 	3,126.300
+269.130 	19.224 	2,070.231
+251.186 	17.942 	1,932.200
+166.335 	11.881 	1,279.500
+155.245 	11.089 	1,194.192
+102.803 	7.343 	790.792
+95.949 		6.854 	738.069
+63.537 		4.538 	488.746
+59.301 		4.236 	456.162
+39.269 		2.805 	302.069
+36.651 		2.618 	281.931
+24.270 		1.734 	186.692
+22.652 		1.618 	174.246
+15.000 		1.071 	115.385
+14.000	 	1	 	107.692
+9.271 		0.662 	71.315
+8.653 		0.618 	66.562
+5.730 		0.409 	44.077
+5.348 		0.382 	41.138
+3.541 		0.253 	27.238
+3.305 		0.236 	25.423
+2.189 		0.156 	16.838
+2.043 		0.146 	15.715
+1.353 		0.097 	10.408
+1.263 		0.09 	9.715
+
+Tim Brown · @nicewebtype
+	
+	*/
+
 
 /********************************/
-/*           Main               */
+/*           Reset              */
 /********************************/
 
-html {
-            height: 100%;
-            margin-bottom: 0px;
-            }
+/*  
+    As a base:
+	http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+	
+	The plan is to remove items as I set their
+	attributes to minimize code.
+	
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+    border: 0;
+	font-size: 14px;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
-html * {
-            padding: 0 0 0 0;
-            margin: 0 0 0 0;
-            }
+blockquote, q {
+
+    /* This can be removed if you decide you want quotation marks around these tags */
+	/* quotes: none; */
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	/* Make the tables nice */
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************************/
+/*           Set                */
+/********************************/
 
 body {
-            background: #FFE001;
-            color: #000;
-            font-family: sans-serif;
+
+		/*  Background   */
+            background: #DDD;
+			
+		/*  Text  */
+			color: #000;
+			color: rgba(0, 0, 0, 1);
+			font: normal Cambria, Georgia, serif;
+			line-height: 1.618em;
+			
             }
 
 /********************************/
 /*           Lists              */
 /********************************/
 
-ul {
-            
-            color: #4d641e;
-            position: relative;
-            left: 15px;
-            background-color: transparent;
-            }
+ol, ul {
+  
+}
 li {
-            padding: 0 0 2px 0;
-            }
+            
+}
 
-li.header {
-            /*border-bottom: solid 1px #4d641e;*/
-            font-size: large;
-            }
+ul.nav li {
+            display: inline;
+}
 /********************************/
 /*           Links              */
 /********************************/
@@ -53,66 +142,41 @@ li.header {
 a:link {
             color: #28BECD;
             text-decoration: none;
-            background-color: transparent;
-            }
+}
 
 a:hover {
             color: #78CEDD;
             text-decoration: none;
-            background-color: transparent;
-            }
+}
 
 a:visited {
             color: #10787B;
             text-decoration: none;
-            background-color: transparent;
-            }
+}
 
 /********************************/
-/*           Layout             */
+/*           Content            */
 /********************************/
 
-#top {
-            position: absolute;
-            left: 10%;
-            width: 80%;
-            height: 2%;
+p {
+			padding: 0.618em;
+}
+
+
+
+/*        Classes and IDs     */
+
+
+
+#everything {
+            padding: 0.253em;
+			width: 75%;
+            
+}
+
+.mast {
                         
             }
 
-#everything {
-            position: absolute;
-            left:5%;
-			top: 0px;
-            width: 80%;
-            height: 100%;
-            background: #FFF;
-            
-            }
-#maincontent {
-            position: relative;
-            left:40px;
-            top: 40px;
-            width: 700px;
-            
-            
-            }
 
-ul.nav li {
-            font-size: 1em;
-            display: inline;
-            position: relative;
-            left: 35%;
-            }
-
-#logo    {
-            position: relative;
-            left: 20px;
-            top: 25px;
-            }
-
-p {
-            position:relative;
-            margin: 1em;
-            }
 
