@@ -22,8 +22,8 @@ html * {
             }
 
 body {
-            background: #231F20;
-            color: #000000;
+            background: #FFE001;
+            color: #000;
             font-family: sans-serif;
             }
 
@@ -35,7 +35,7 @@ ul {
             
             color: #4d641e;
             position: relative;
-            left: 19px;
+            left: 15px;
             background-color: transparent;
             }
 li {
@@ -74,19 +74,19 @@ a:visited {
 
 #top {
             position: absolute;
-            left: 100px;
-            width: 818px;
-            height: 22px;
+            left: 10%;
+            width: 80%;
+            height: 2%;
                         
             }
 
 #everything {
             position: absolute;
-            left:100px;
-            top: 22px;
+            left:5%;
+			top: 0px;
             width: 80%;
             height: 100%;
-            background: #FFE001;
+            background: #FFF;
             
             }
 #maincontent {
@@ -94,15 +94,15 @@ a:visited {
             left:40px;
             top: 40px;
             width: 700px;
-            padding: 0 0 0 20px;
+            
             
             }
 
-ul#mainmenu li {
-            font-size: 10pt;
+ul.nav li {
+            font-size: 1em;
             display: inline;
             position: relative;
-            left: 490px;
+            left: 35%;
             }
 
 #logo    {
@@ -113,9 +113,6 @@ ul#mainmenu li {
 
 p {
             position:relative;
-            left: 20px;
-            top: 10px;
-            right: 20px;
-            bottom: 10px;
+            margin: 1em;
             }
 
