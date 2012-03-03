@@ -6,46 +6,42 @@
 /* inspiration. Drop me a line. */
 /********************************/
 
-/* Modular Scale - modularscale.com
+/* Modular Scale
 	----------------------
-	14px @ 1:1.618	
-	15px @ 1:1.618	
+	17px @ 1:1.618	
+68px @ 1:1.618	
 	----------------------
-Pixels 		Ems 	% of 13
-1,139.980 	81.427 	8,769.077
-1,063.974 	75.998 	8,184.415
-704.561 	50.326 	5,419.700
-657.586 	46.97 	5,058.354
-435.452 	31.104 	3,349.631
-406.419 	29.03 	3,126.300
-269.130 	19.224 	2,070.231
-251.186 	17.942 	1,932.200
-166.335 	11.881 	1,279.500
-155.245 	11.089 	1,194.192
-102.803 	7.343 	790.792
-95.949 		6.854 	738.069
-63.537 		4.538 	488.746
-59.301 		4.236 	456.162
-39.269 		2.805 	302.069
-36.651 		2.618 	281.931
-24.270 		1.734 	186.692
-22.652 		1.618 	174.246
-15.000 		1.071 	115.385
-14.000	 	1	 	107.692
-9.271 		0.662 	71.315
-8.653 		0.618 	66.562
-5.730 		0.409 	44.077
-5.348 		0.382 	41.138
-3.541 		0.253 	27.238
-3.305 		0.236 	25.423
-2.189 		0.156 	16.838
-2.043 		0.146 	15.715
-1.353 		0.097 	10.408
-1.263 		0.09 	9.715
 
-Tim Brown · @nicewebtype
-	
-	*/
+Pixels 	Ems 	% of 13
+798.512 	46.971 	6,142.400
+754.054 	44.356 	5,800.415
+493.518 	29.03 	3,796.292
+466.041 	27.414 	3,584.931
+305.017 	17.942 	2,346.285
+288.035 	16.943 	2,215.654
+188.515 	11.089 	1,450.115
+178.019 	10.472 	1,369.377
+116.511 	6.854 	896.238
+110.024 	6.472 	846.338
+72.009 		4.236 	553.915
+68.000 		4 		523.077
+44.505 		2.618 	342.346
+42.027 		2.472 	323.285
+27.506 		1.618 	211.585
+25.975 		1.528 	199.808
+17.000 		1	 	130.769
+16.054 		0.944 	123.492
+10.507 		0.618 	80.823
+9.922 		0.584 	76.323
+6.494 		0.382 	49.954
+6.132 		0.361 	47.169
+4.014 		0.236 	30.877
+3.790 		0.223 	29.154
+2.481 		0.146 	19.085
+2.342 		0.138 	18.015
+1.533 		0.09 	11.792
+1.447 		0.085 	11.131
+	----------------------*/
 
 
 /********************************/
@@ -78,7 +74,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
     border: 0;
-	font-size: 14px;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -86,6 +81,27 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+
+/* More font scaling stuff from Harry @ csswizardry.com */
+/* Define your base font-size here; most elements will inherit this. */
+html{
+    font-size:16px;      /* Assuming 16px... */
+    line-height:1.5;    /* font-size * line-height = 24(This is now our "magic number"; all subsequent margin-bottoms and line-heights want to be a multiple of this number in order to maintain vertical rhythm.) */
+	letter-spacing: 0.018em;
+}
+
+/* Common margin-bottom for vertical rhythm. */
+h1,h2,h3,h4,h5,h6,
+ul,ol,dl,
+fieldset,
+p,
+table,
+pre,
+hr{
+	/* these come from the "magic number" listed above */
+    margin-bottom:24px; /* The actual number */
+    margin-bottom:1.5rem; /* The line-height */
 }
 
 blockquote, q {
@@ -104,6 +120,98 @@ table {
 	border-spacing: 0;
 }
 
+/* These elements are based on Harry from www.csswizardry.com's reset.*/
+strong,b,mark{
+	font-weight:bold;
+}
+em,i,cite,q,address,dfn,var{
+	font-style:italic;
+}
+abbr[title],dfn[title]{
+	cursor:help;
+	border-bottom:1px dotted;
+}
+ins{
+	border-bottom:1px solid;
+}
+a,u,ins{
+	text-decoration:none;
+}
+del,s{
+	text-decoration:line-through;
+}
+pre,code,samp,kbd{
+	font-family:monospace;
+}
+small{
+	font-size:0.618em;
+}
+img{
+	border:none;
+	font-style:italic;
+}
+
+/********************************/
+/*   Standardized Font Scales   */
+/********************************/
+/* Scaling; Again, thanks to Harry from csswizardry.com */
+/* All of these have to be multiples of the "magic number" to maintain rhythm */
+
+
+/* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
+.giga{
+    font-size:80px;
+    font-size:5rem;     /* 80px */
+    line-height:1.2;    /* 96px */
+}
+.mega{
+    font-size:64px;
+    font-size:4rem;     /* 64px */
+    line-height:1.125;  /* 72px */
+}
+.kilo{
+    font-size:48px;
+    font-size:3rem;     /* 48px */
+    line-height:1;      /* 48px */
+}
+
+/* Define headings and their associated classes here. */
+h1,.alpha{
+    font-size:32px;
+    font-size:2rem;     /* 32px */
+    line-height:1.5;    /* 48px */
+}
+h2,.beta{
+    font-size:1.5em;    /* 24px */
+    line-height:1;      /* 24px */
+}
+h3,.gamma{
+    font-size:20px;
+    font-size:1.25rem;  /* 20px */
+    line-height:1.2;    /* 24px */
+}
+h4,.delta{
+    font-size:18px;
+    font-size:1.125rem; /* 18px */
+    line-height:1.333;  /* 24px */
+}
+h5,.epsilon{
+    font-size:16px;
+    font-size:1rem;     /* 16px */
+    line-height:1.5;    /* 24px */
+}
+h6,.zeta{
+    font-size:16px;
+    font-size:1rem;     /* 16px */
+    line-height:1.5;    /* 24px */
+}
+
+/* Smaller-than-body-copy sizes here. */
+small,.milli {
+    font-size:12px;
+    font-size:0.75rem;  /* 12px */
+    line-height:2;      /* 24px */
+}
 /********************************/
 /*           Set                */
 /********************************/
@@ -111,47 +219,53 @@ table {
 body {
 
 		/*  Background   */
-            background: #DDD;
+            background: #999;
 			
 		/*  Text  */
-			color: #000;
-			color: rgba(0, 0, 0, 1);
-			font: normal Cambria, Georgia, serif;
-			line-height: 1.618em;
+			color: #111;
+			font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 			
             }
+
+/********************************/
+/*           Headings           */
+/********************************/
+h1,h2,h3,h4,h5,h6 {
+			font-weight: bold;
+			font-family: monospace;
+			text-align: center;
+}
+
+
 
 /********************************/
 /*           Lists              */
 /********************************/
 
 ol, ul {
-  
-}
-li {
-            
+			margin-left: 1em; /* Resetting */
 }
 
-ul.nav li {
-            display: inline;
+ul.nav  {
+			margin-left: 0em;
+} 
+ul.nav li {		
+		    display: inline;
 }
 /********************************/
 /*           Links              */
 /********************************/
 
 a:link {
-            color: #28BECD;
-            text-decoration: none;
+            color: none;
 }
 
 a:hover {
-            color: #78CEDD;
-            text-decoration: none;
+            color: none;
 }
 
 a:visited {
-            color: #10787B;
-            text-decoration: none;
+            color: none;
 }
 
 /********************************/
@@ -169,14 +283,21 @@ p {
 
 
 #everything {
-            padding: 0.253em;
-			width: 75%;
+            padding: 0.618em;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 2px;
+			background: #FFF;
             
 }
 
+.mast, .section, .footer{ 
+			margin-left: 4%;
+			margin-right: 4%;
+}
 .mast {
-                        
-            }
+			text-align: center;
+}
 
 
 
