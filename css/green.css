@@ -9,9 +9,9 @@
 /* Modular Scale
 	----------------------
 	17px @ 1:1.618	
-68px @ 1:1.618	
+	68px @ 1:1.618	
 	----------------------
-
+http://modularscale.com/scale/?px1=17&px2=68&ra1=1.618&ra2=0
 Pixels 	Ems 	% of 13
 798.512 	46.971 	6,142.400
 754.054 	44.356 	5,800.415
@@ -219,10 +219,9 @@ small,.milli {
 body {
 
 		/*  Background   */
-            background: #999;
 			
 		/*  Text  */
-			color: #111;
+			color: #1D181F;
 			font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 			
             }
@@ -257,24 +256,18 @@ ul.nav li {
 /********************************/
 
 a:link {
-            color: none;
+            color: #FF5335;
 }
 
 a:hover {
-            color: none;
+			text-decoration: underline;
 }
 
-a:visited {
-            color: none;
-}
 
 /********************************/
 /*           Content            */
 /********************************/
 
-p {
-			padding: 0.618em;
-}
 
 
 
@@ -286,8 +279,6 @@ p {
             padding: 0.618em;
 			margin-left: 5%;
 			margin-right: 5%;
-			margin-top: 2px;
-			background: #FFF;
             
 }
 
@@ -298,6 +289,7 @@ p {
 .mast {
 			text-align: center;
 }
+
 
 
 
