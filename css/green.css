@@ -76,6 +76,14 @@ time, mark, audio, video {
     border: 0;
 	font: inherit;
 	vertical-align: baseline;
+	
+	/*  Background   */
+			
+	/*  Text  */
+	color: #1D181F;
+	font-family: serif; /* "Palatino Linotype", "Book Antiqua",  Palatino, */
+	
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -86,9 +94,11 @@ footer, header, hgroup, menu, nav, section {
 /* More font scaling stuff from Harry @ csswizardry.com */
 /* Define your base font-size here; most elements will inherit this. */
 html{
-    font-size:16px;      /* Assuming 16px... */
-    line-height:1.5;    /* font-size * line-height = 24(This is now our "magic number"; all subsequent margin-bottoms and line-heights want to be a multiple of this number in order to maintain vertical rhythm.) */
+	font-size:16px;      /* Assuming 16px... */
+	line-height:1.5;    /* font-size * line-height = 24(This is now our "magic number"; all subsequent margin-bottoms and line-heights want to be a multiple of this number in order to maintain vertical rhythm.) */
 	letter-spacing: 0.018em;
+	
+	
 }
 
 /* Common margin-bottom for vertical rhythm. */
@@ -106,8 +116,7 @@ hr{
 
 blockquote, q {
 
-    /* This can be removed if you decide you want quotation marks around these tags */
-	/* quotes: none; */
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -161,70 +170,63 @@ img{
 /* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
 .giga{
     font-size:80px;
-    font-size:5rem;     /* 80px */
+    /*font-size:5rem;     /* 80px */
     line-height:1.2;    /* 96px */
 }
 .mega{
     font-size:64px;
-    font-size:4rem;     /* 64px */
+    /*font-size:4rem;     /* 64px */
     line-height:1.125;  /* 72px */
 }
 .kilo{
     font-size:48px;
-    font-size:3rem;     /* 48px */
+    /*font-size:3rem;     /* 48px */
     line-height:1;      /* 48px */
 }
 
 /* Define headings and their associated classes here. */
-h1,.alpha{
+.alpha{
     font-size:32px;
-    font-size:2rem;     /* 32px */
-    line-height:1.5;    /* 48px */
+    /*font-size:2rem;     /* 32px */
+    /*line-height:1.5;  Is it necessary to explicitally define this here?  /* 48px */
 }
-h2,.beta{
-    font-size:1.5em;    /* 24px */
+.beta{
+	font-size: 24px;
+    /*font-size:1.5em;    /* 24px */
     line-height:1;      /* 24px */
 }
-h3,.gamma{
+.gamma{
     font-size:20px;
-    font-size:1.25rem;  /* 20px */
+    /*font-size:1.25rem;  /* 20px */
     line-height:1.2;    /* 24px */
 }
-h4,.delta{
+.delta{
     font-size:18px;
-    font-size:1.125rem; /* 18px */
+    /*font-size:1.125rem; /* 18px */
     line-height:1.333;  /* 24px */
 }
-h5,.epsilon{
+/* This is set to the document default font size of 16px
+.epsilon{
     font-size:16px;
-    font-size:1rem;     /* 16px */
-    line-height:1.5;    /* 24px */
+    /*font-size:1rem;     /* 16px 
+    /*line-height:1.5;  or here?  /* 24px
 }
-h6,.zeta{
+*/
+/* So is this. Why?
+.zeta{
     font-size:16px;
-    font-size:1rem;     /* 16px */
-    line-height:1.5;    /* 24px */
+    font-size:1rem;     /* 16px 
+    line-height:1.5;    /* 24px 
 }
+*/
 
 /* Smaller-than-body-copy sizes here. */
-small,.milli {
+.milli {
     font-size:12px;
-    font-size:0.75rem;  /* 12px */
+    /*font-size:0.75rem;  /* 12px */
     line-height:2;      /* 24px */
 }
-/********************************/
-/*           Set                */
-/********************************/
 
-body {
-
-		/*  Background   */
-			
-		/*  Text  */
-			color: #1D181F;
-			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-			
-            }
 
 /********************************/
 /*           Headings           */
@@ -241,14 +243,7 @@ h1,h2,h3,h4,h5,h6 {
 /*           Lists              */
 /********************************/
 
-ol, ul {
-			margin-left: 1em; /* Resetting */
-}
-
-ul.nav  {
-			margin-left: 0em;
-} 
-ul.nav li {		
+.nav li {		
 		    display: inline;
 }
 /********************************/
@@ -275,7 +270,7 @@ a:hover {
 
 
 
-#everything {
+.everything {
             padding: 0.618em;
 			margin-left: 5%;
 			margin-right: 5%;
@@ -289,7 +284,3 @@ a:hover {
 .mast {
 			text-align: center;
 }
-
-
-
-
