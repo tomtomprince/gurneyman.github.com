@@ -1,0 +1,136 @@
+html { 
+		height: 100%;  
+		margin-bottom: 0px; 
+}
+
+html * { 
+		padding: 0 0 0 0; 
+		margin: 0 0 0 0; 
+}
+
+
+/* bg stuff */
+
+body {
+		background: #f3f4f5;
+		color: #dce0ee;
+	 }
+	 
+
+#outborder {
+		position: absolute;
+		left: 100px;
+		background: #b3b8c7;
+		width: 800px;
+		height: 100%;
+}
+#inborder {
+		position: relative;
+		left: 10px;
+		background: #2f3342;
+		width: 780px;
+		height: 100%;
+}
+#everything {
+		position: relative;
+		left: 10px;
+		background: #373c4e;
+		text-align: left;
+		font-size: 14 px;
+		border-left: 1px solid #dce0ee;
+		border-right: 1px solid #dce0ee;
+		width: 760px;
+		height: 100%;
+		font-family: Arial, sans-serif;
+}
+
+/* header + POTW */
+
+img.logo {
+		float:left;
+		margin: 30 0 2 5;
+}
+#header {
+		text-align: right;
+}
+ul#mainmenu {
+		position: relative;
+		top: 81px;
+		margin: 0 5 0 0;
+		
+		
+		list-style-type: none;
+}
+ul#mainmenu li {
+		display: inline;
+		background: #2f3342;
+		border-top: 1px solid #dce0ee;
+		border-left: 1px solid #dce0ee;
+		border-right: 1px solid #dce0ee;
+		padding: 4 4 4 4;
+}
+
+	ul#mainmenu li a {
+		font-family: arial;
+		font-size: 11pt;
+		color: #dce0ee;
+		text-decoration: none;
+}
+
+    ul#mainmenu li#nav_goals a:hover   { color: #eda862;}
+    /*ul#mainmenu li#nav_home a.current { background: red; }*/
+    ul#mainmenu li#nav_sections a:hover   { color: #eda862;}
+    /*ul#mainmenu li#nav_home a.current { background: red; }*/
+    ul#mainmenu li#nav_resources a:hover   { color: #eda862;}
+    /*ul#mainmenu li#nav_home a.current { background: red; }*/
+    ul#mainmenu li#nav_about a:hover   { color: #eda862;}
+    /*ul#mainmenu li#nav_home a.current { background: red; }*/
+    ul#mainmenu li#nav_sitemap a:hover   { color: #eda862;}
+    /*ul#mainmenu li#nav_home a.current { background: red; }*/
+    ul#mainmenu li#nav_contact a:hover   { color: #eda862;}
+    /*ul#mainmenu li#nav_home a.current { background: red; }*/
+
+    
+    /* TO DO: POTW */
+#potw {
+		position: absolute;
+		top: 100px;	
+		width: 760px;
+		height: 100px;
+		background-image: url(images/potwJuly20.gif);
+		border-top: 2px solid #dce0ee;
+		border-bottom: 2px solid #dce0ee;
+}
+    
+#maincontent {
+		position: absolute;
+		top: 220px;
+		padding: 5 0 5 20;
+		width: 800px;
+		background: #373c4e;
+}
+div.leftcolumn {
+		position: absolute;
+		top: 250px;
+		left: 100px;
+		background: #373c4e;
+		width: 250px;
+}
+div.leftcolumn li {
+		position:relative;
+		left: 30px;
+}
+div.leftcolumn h3 {
+		color: #eda862;
+}
+div.rightcolumn {
+		position: absolute;
+		top: 250px;
+		left: 450px;
+		background: #373c4e;
+		width: 250px;
+}
+div.rightcolumn li {
+		position:relative;
+		left: 30px;
+}
