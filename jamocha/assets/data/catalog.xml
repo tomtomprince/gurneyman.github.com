@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<catalog>
+	<category>
+		<type>
+			Coffee Beans
+		</type>
+		<item>
+			<name>Light</name>
+			<imgurl>assets/img/catalog/item.jpg</imgurl>
+			<description>A light roast. </description>
+			<price>9.95</price>
+			<quantity>5</quantity>
+			<featured>true</featured>
+		</item>
+		<item>
+			<name>Dark</name>
+			<imgurl>assets/img/catalog/item.jpg</imgurl>
+			<description>A dark roast.</description>
+			<price>9.95</price>
+			<quantity>5</quantity>
+			<featured>false</featured>
+		</item>
+	</category>
+	<category>
+		<type>
+			Gear
+		</type>	
+		<item>
+			<name>French Press</name>
+			<imgurl>assets/img/catalog/item.jpg</imgurl>
+			<description>A french press.</description>
+			<price>19.95</price>
+			<quantity>5</quantity>
+			<featured>true</featured>
+		</item>
+		  
+		<item>
+			<name>Traveller Mug</name>
+			<imgurl>assets/img/catalog/item.jpg</imgurl>
+			<description>A traveller mug.</description>
+			<price>15.95</price>
+			<quantity>2</quantity>
+			<featured>false</featured>
+		</item>
+		<item>
+			<name>Grinder</name>
+			<imgurl>assets/img/catalog/item.jpg</imgurl>
+			<description>A traveller mug.</description>
+			<price>15.95</price>
+			<quantity>2</quantity>
+			<featured>true</featured>
+		</item>
+	</category>
+	
+</catalog>

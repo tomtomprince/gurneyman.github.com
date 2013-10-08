@@ -1,0 +1,117 @@
+*{margin:0;padding:0}:focus,:active {outline:0}img{border: 0}
+body { font: .8em 'Raleway', sans-serif; background: #fff ; color: #777; }
+a { text-decoration: none; color: #B20F0F; }
+h1 { font-size: 1.4em; font-weight: normal; }
+	h1 a { color: #fff; font-size: 1.6em; }
+h2 { font-size: 1.0em; }
+h3 { font-size: 1.2em; background: #3B2803 ; padding: 6px 7px; color: #fff; font-weight: normal; float: left; }
+h4 { margin: 0 0 15px; color: #555; font-weight: normal; font-size: 1.6em; font-weight: normal; }
+p { clear: both; line-height: 1.64em; margin: 0 0 15px; }
+table{margin:0}
+
+/********************
+ *	Utility Stuff	*
+ ********************/
+
+/* 
+ *	This makes sure we're containing all the floating blocks inside the copy div
+ *	See note on: https://developer.mozilla.org/en-US/docs/CSS/clear
+ *	Basically, add this to any div that you want to contain anything that floats or clears.
+ */
+	.wrapper:after { 
+	   content: "";
+	   display: block; 
+	   visibility: hidden; 
+	   clear: both;
+	}
+
+	.wrapper{
+		clear: both;
+	}
+/*
+ *	This is our column system. I changed the total width to 960 so that the "third" class
+ * 	actually makes our columns 1/3 of our total width. That is, the content is 300px width, 
+ * 	followed by a 30px "gutter" on the right, except for the last column on the right.
+ */	
+	.third { float: left; width: 300px; margin: 0 30px 0 0; }
+		.third h3 {margin-bottom: 15px;}
+		
+	.2third { width: 66%; margin: 0 30px 0 0;}
+	.last { margin-right: 0; }
+#content { width: 960px; margin: 0 auto; }
+	
+	/*
+	 * Header
+	 */
+	#header{border-bottom: 1px solid #ddd; padding-bottom: 20px;}	
+		#social { float: right; width: 50%; color: #CCC; text-align: right; background:#242224;}
+			#social img {margin: 5px;}
+		#logo { float: left; width: 50%; height: 150px; background:#3B2803; }
+			#logo h1 { text-align: center; margin-top: 100px; margin-left: 5px; text-shadow: 1px 1px 1px #7E0E0E;}
+	
+	/*
+	 * Menu
+	 */
+	#menu {float: right; padding: 20px 20px 15px 0px;}
+		#menu li { display: inline; font-size: 1.3em; }
+			#menu li a { color: #808080; margin: 0 0 0 55px;padding-bottom: 5px;}
+			#menu li a:hover, #menu li.current a, #menu li a:focus { color: #000; border-bottom: 1px solid #ddd; }
+	/*
+	 * Content
+	 */
+	#copy {
+		margin: 5px 0 0 0;
+		padding-bottom: 10px;
+		clear: both;
+	}
+	
+		#pitch {display: inline-block; padding: 15px 0px 30px 15px; margin: 0px 0px 20px 0px; border-bottom: 2px solid #ddd;}
+			#pitch h1 { float: left; width: 60%; font-size: 2.6em; color: #000; }
+			#pitch img{float: right;}
+			#pitch h2 { line-height: 1.5em; }
+	
+
+	
+	/*
+	 *	Bottom Links
+	 */
+	#bottom_links{
+		background-color: #3B2803;
+		color: #EEE;
+		padding: 50px 0 20px 0;
+		margin-bottom: 10px;
+	}
+	#bottom_links a{
+		color: #EEE;
+	}
+	#bottom_links p, ul, h2{
+		position: relative;
+	}
+	#bottom_links p, h2{
+		left: 30%;
+	}
+	#bottom_links ul{
+		list-style: none;
+		left: 40%;
+	}
+	/*
+	 * Footer
+	 */
+	#footer { 
+		clear: both; 
+		font-size: .84em; 
+		border-top: 2px solid #ddd;
+		text-align: right;
+		padding: 10px 0 0;}
+		
+	ul {
+		list-style: none;
+	}
+	/*
+	 * Catalog
+	 * 
+	 */
+	#categories, #catalog{
+		display: inline-block;
+		border: 1px solid black;
+	}
