@@ -75,3 +75,15 @@ h2 {
 .icon:hover {
 	opacity: .75;
 }
+
+@media (max-width: 500px) {
+	h1 {
+	font-size: 5em;
+	margin: 0;
+	padding: 0;
+	}
+	
+	h2 {
+		font-size: 2em;
+	}
+}
