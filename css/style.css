@@ -44,11 +44,6 @@ h2 {
 	border-radius: 10px;
 }
 
-#contact {
-	max-width: 320px;
-	margin: 1em auto;
-	padding-left: 2em;
-}
 
 #recent a{
 	
@@ -69,8 +64,17 @@ h2 {
 	background: #f03536;
 }
 
+#contact {
+	max-width: 300px;
+	margin: 1em auto;
+}
+
 .icon {
 	margin: .25em;
+}
+
+#contact a:last-child img {
+	margin-right: 0;
 }
 .icon:hover {
 	opacity: .75;
@@ -95,4 +99,13 @@ h2 {
 	section a:nth-child(odd) {
 		margin-left: 2.2em;
 	}
+
+	#contact {
+		max-width: 250px;
+	}
+	#contact a:last-child img {
+	margin-right: 0;
+	}
 }
+
+
